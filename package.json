@@ -1,0 +1,28 @@
+{
+  "name": "twitter-clone-front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marabesi/twitter-clone-front-end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marabesi/twitter-clone-front-end/issues"
+  },
+  "homepage": "https://github.com/marabesi/twitter-clone-front-end#readme",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
