@@ -3,5 +3,18 @@ html(lang="eng")
     head
         title="Twitter clone"
     body
-        h1 Twitter
-        p testing
+        nav(class="top-menu")
+            ul(class="actions")
+                li(class="item") <a href=""><span class="icon icon-home"></span><span class="text">Home<span></a>
+                li(class="item") <a href=""><span class="icon icon-lightning"></span><span class="text">Moments</span></a>
+                li(class="item") <a href=""><span class="icon icon-bell"></span><span class="text">Notifications</span></a>
+                li(class="item") <a href=""><span class="icon icon-message"></span><span class="text">Messages</span></a>
+            
+            div(class="logo") <img src="https://img.clipartfest.com/3ca714319861d6d0f53f9b7b4f5971fc_13-twitter-logo-vector-png-clipart-twitter-logo_518-518.png" width="25"/>
+
+            ul(class="info")
+                li(class="item") <form><input type="text" placeholder="Search Twitter"/><span class="icon icon-search"></span></form>
+                li(class="item") <img class="profile" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAWiAAAAJGY4MTRmNDk1LTU5YzQtNDhiNC1iNDY2LTc1Y2U0NzBkYmRjYQ.jpg" width="35"/>
+                li(class="item") <button class="icon icon-tweet tweet-button"></button>
+        div(class="container")
+            section(class="left")
