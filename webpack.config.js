@@ -1,10 +1,12 @@
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: [
         path.resolve(__dirname, 'src/sass/style.scss'),
         path.resolve(__dirname, 'src/js/app.js'), 
+        path.resolve(__dirname, 'src/index.jade'), 
     ],
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -16,13 +18,20 @@ module.exports = {
             loader: ExtractTextPlugin.extract({
                 loader: 'css-loader?importLoaders=1',
             }),
-        },{ 
+        },{
             test: /\.(sass|scss)$/,
             loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
-      }
-    ]
+      },
+      {
+        test: /\.jade$/,
+        loader: 'jade-loader'
+      }]
     },
     plugins: [
         new ExtractTextPlugin('app.bundle.css'),
+        new HtmlWebpackPlugin({
+            template: './src/index.jade',
+            filename: '../index.html'
+        })
     ]
 };

@@ -2,9 +2,9 @@
   "name": "twitter-clone-front-end",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "webpack-dev-server --env development"
+    "start": "webpack-dev-server --output-public-path=dist/ --progress --env development"
   },
   "repository": {
     "type": "git",
@@ -17,13 +17,18 @@
   },
   "homepage": "https://github.com/marabesi/twitter-clone-front-end#readme",
   "devDependencies": {
+    "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.28.0",
+    "jade": "^1.11.0",
+    "jade-html-loader": "0.0.3",
+    "jade-loader": "^0.8.0",
     "node-sass": "^4.5.2",
+    "path": "^0.12.7",
     "sass-loader": "^6.0.3",
     "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.5"
   },
-  "dependencies": {
-    "path": "^0.12.7"
-  }
+  "dependencies": {}
 }
