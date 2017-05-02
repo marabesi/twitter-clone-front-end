@@ -1,0 +1,32 @@
+$icon-size: 23px;
+
+.icon:before {
+    font-family: "rosettaicons";
+    font-size: $icon-size;
+    float: left;
+}
+
+.icon-home:before { 
+    content: "\f053";
+}
+
+.icon-lightning:before {
+    content: url("/assets/images/flash.svg");
+    width: $icon-size;
+}
+
+.icon-bell:before {
+    content: "\f055";
+}
+
+.icon-message:before {
+    content: "\f054"
+}
+
+.icon-tweet:before {
+    content: "\f029";
+}
+
+.icon-search:before {
+    content: "\f058";
+}

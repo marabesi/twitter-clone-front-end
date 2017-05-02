@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.fix-nav {
+    margin: 56px 5px;
+}
+
+.container .first {
+    justify-content: flex-start;
+    width: 290px;
+    height: 100px;
+    background: #ccc;
+    
+}
+
+.container .second {
+    width: 588px;
+    height: 100px;
+    background: #999;
+}
+
+.container .third {
+    width: 290px;
+    height: 1000px;
+    background: #ccc;
+}
