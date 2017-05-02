@@ -1,0 +1,13 @@
+language: node_js
+before_script:
+- chmod +x ./prebuild.sh
+- ./prebuild.sh
+- gem install sass
+script:
+- docpad deploy-ghpages --env static
+env:
+  global:
+  - GH_REPO="laraconfbrasil/website"
+branches:
+  only:
+  - master
