@@ -4,7 +4,7 @@ before_script:
 - ./prebuild.sh
 - gem install sass
 script:
-- docpad deploy-ghpages --env static
+- webpack
 env:
   global:
   - GH_REPO="marabesi/twitter-clone-front-end"
