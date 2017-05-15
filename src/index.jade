@@ -1,6 +1,7 @@
 doctype html
 html(lang="eng")
     head
+
         title="Twitter clone"
     body
         nav(class="top-menu")
@@ -10,13 +11,18 @@ html(lang="eng")
                 li(class="item") <a href=""><span class="icon icon-bell"></span><span class="text">Notifications</span></a>
                 li(class="item") <a href=""><span class="icon icon-message"></span><span class="text">Messages</span></a>
             
-            div(class="logo") <img src="https://img.clipartfest.com/3ca714319861d6d0f53f9b7b4f5971fc_13-twitter-logo-vector-png-clipart-twitter-logo_518-518.png" width="25"/>
+            div(class="logo") <img src="assets/images/twitter.png" width="25"/>
 
             ul(class="info")
                 li(class="item") <form><input type="text" placeholder="Search Twitter"/><span class="icon icon-search"></span></form>
-                li(class="item") <img class="profile" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAWiAAAAJGY4MTRmNDk1LTU5YzQtNDhiNC1iNDY2LTc1Y2U0NzBkYmRjYQ.jpg" width="35"/>
+                li(class="item") <img class="profile" src="assets/images/profile.jpg" width="35"/>
                 li(class="item") <button class="icon icon-tweet tweet-button"></button>
+
         div(class="container")
             section(class="fix-nav first")
+                div(class="profile-image")
+
             section(class="fix-nav second")
             section(class="fix-nav third")
+
+        script(src="app.bundle.js")

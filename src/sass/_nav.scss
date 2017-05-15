@@ -16,9 +16,20 @@
     li.item {
         list-style: none;
         padding-top: 12px;
-        
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &:nth-child(1) {
+            min-width: 70px;
+        }
+
         &:nth-child(n + 2) {
+            min-width: 85px;
             margin-left: 20px;
+        }
+
+        &:nth-child(3) {
+            min-width: 103px;
         }
 
         a {

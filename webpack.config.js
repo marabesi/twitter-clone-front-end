@@ -5,9 +5,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: [
+        path.resolve(__dirname, 'src/js/jquery-3.2.1.js'),
         path.resolve(__dirname, 'src/sass/style.scss'),
-        path.resolve(__dirname, 'src/js/app.js'), 
-        path.resolve(__dirname, 'src/index.jade'), 
+        path.resolve(__dirname, 'src/js/app.js'),
+        path.resolve(__dirname, 'src/index.jade'),
     ],
     output: {
         path: path.resolve(__dirname, 'dist'),
