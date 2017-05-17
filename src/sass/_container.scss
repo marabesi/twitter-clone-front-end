@@ -11,14 +11,14 @@
     justify-content: flex-start;
     width: 290px;
     height: 196px;
-    background: #ccc;
+    background: #fff;
     padding-bottom: 10px;
 }
 
 .container .second {
     width: 588px;
-    height: 100px;
-    background: #999;
+    min-height: 100px;
+    background: #F4EFF9;
 }
 
 .container .third {

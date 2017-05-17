@@ -1,0 +1,91 @@
+.second {
+  border: 1px solid #e6ecf0;
+
+  img {
+    margin-right: 10px;
+    vertical-align: top;
+  }
+
+  .tweet-area {
+    width: 90%;
+    height: 80px;
+  }
+
+  .action {
+    min-width: 200px;
+    float: left;
+    margin-left: 50px;
+
+    button {
+      width: 50px;
+      height: 40px;
+
+      &:nth-child(n + 2) {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .tweet-action {
+    float: right;
+    width: 155px;
+
+    .characters-count {
+      width: 50px;
+      position: absolute;
+      margin-top: 13px;
+    }
+
+    button {
+      padding:5px 20px 30px 20px;
+      float: right;
+      margin-right: 2px;
+
+      span {
+        color: #fff;
+        padding-top: 4px;
+        display: block;
+        float: left;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .tweet-box {
+    height: 140px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .tweet-area {
+      padding-left: 10px;
+      padding-top: 10px;
+      border-radius: 3px;
+
+      &::placeholder {
+        color: #ccd6dd;
+      }
+    }
+  }
+
+  .feed-notification {
+    height:40px;
+    border-top: 1px solid #e6ecf0;
+    border-bottom: 1px solid #e6ecf0;
+    color: #9266CC;
+    background: #f5f8fa;
+    cursor: pointer;
+
+    &:hover {
+      background: #e6ecf0;
+    }
+
+    span {
+      display: block;
+      width: 22%;
+      margin: 12px auto;
+    }
+  }
+}

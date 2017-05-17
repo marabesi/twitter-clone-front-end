@@ -2,6 +2,8 @@
     width: 100%;
     height: 96px;
     float: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .profile-image {
@@ -18,6 +20,10 @@
     .user-info {
         float: left;
         margin: 10px;
+        
+        h1 {
+            color: #000;
+        }
     }
 }
 
@@ -25,4 +31,12 @@
     float: left;
     min-width: 85px;
     margin-left: 10px;
+
+    small {
+        text-transform: uppercase;
+    }
+
+    h1 {
+        color: #9266CC;
+    }
 }
