@@ -1,0 +1,62 @@
+.login-background {
+  background-color: #000;
+}
+
+.login-forms {
+  max-width: 500px;
+  color: #FFFFFF;
+  margin-top: 120px;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 21px;
+  }
+}
+
+.login, .singup {
+  display: block;
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+  background: #FFFFFF;
+}
+
+.login {
+  margin-bottom: 10px;
+
+  .username {
+    width: 90%;
+  }
+
+  .password {
+    width: 60%;
+    margin-right: 10px;
+  }
+}
+
+.forgot-password {
+  color: #1b95e0;
+  font-size: 12px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.singup {
+  h2 {
+    display: inline;
+    color: #14171a;
+    font-weight: 500;
+    padding: 10px;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+
+  input {
+    width: 90%;
+  }
+}

@@ -35,6 +35,10 @@ module.exports = {
             template: './src/index.jade',
             filename: 'index.html'
         }),
+        new HtmlWebpackPlugin({
+            template: './src/login.jade',
+            filename: 'login.html'
+        }),
         new CopyWebpackPlugin([
             { from: './assets/**/*', to: path.resolve(__dirname, 'dist/') }
         ]),

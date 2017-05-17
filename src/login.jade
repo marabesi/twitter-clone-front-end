@@ -1,0 +1,34 @@
+doctype html
+html(lang="eng")
+    head
+        title="Twitter clone login"
+    body(class="login-background")
+        nav(class="top-menu")
+            ul(class="actions")
+                li(class="item") <a href="/"><img src="assets/images/twitter.png" width="25"/></a>
+                li(class="item") <a href=""><span class="icon icon-lightning"></span><span class="text">Moments</span></a>
+        div(class="container")
+            div(class="login-forms fix-nav")
+                h1() Welcome to Twitter.
+                p() Connect with your friends — and other fascinating people. Get in-the-moment updates on the things that interest you. And watch events unfold, in real time, from every angle.
+
+            div(class="login-forms fix-nav")
+                form(method="post" class="login")
+                    input(type="text" class="input-text username" placeholder="Phone, email or username")
+                    input(type="text" class="input-text password" placeholder="Password")
+                    button(class="default blue") Log in
+
+                    input(type="checkbox" id="remember-me" class="input-checkbox")
+                    label(for="remember-me") Remember me
+
+                    a(href="#" class="forgot-password") Forgot Password?
+
+                form(method="post" class="singup")
+                    h2() New to Twitter?
+                    span() Sign up
+
+                    input(type="text" class="input-text username" placeholder="Full name")
+                    input(type="text" class="input-text username" placeholder="Email")
+                    input(type="text" class="input-text username" placeholder="Password")
+
+                    button(class="default yellow") Sign up for Twitter
