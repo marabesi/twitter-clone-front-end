@@ -10,9 +10,9 @@
 .container .first {
     justify-content: flex-start;
     width: 290px;
-    height: 100px;
+    height: 196px;
     background: #ccc;
-    
+    padding-bottom: 10px;
 }
 
 .container .second {
@@ -25,4 +25,8 @@
     width: 290px;
     height: 1000px;
     background: #ccc;
+}
+
+.border {
+    border-radius: 5px;
 }
