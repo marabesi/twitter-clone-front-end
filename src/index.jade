@@ -60,7 +60,7 @@ html(lang="eng")
                 div(class="feed-notification")
                     span() View 5 new Tweets
 
-                each val in [1, 2, 3, 4, 5]
+                each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
                     div(class="tweet-time-line")
                         div(class="tweet-picture")
                             img(src="http://lorempixel.com/48/48")
@@ -79,5 +79,16 @@ html(lang="eng")
                                 span(class="icon-like")
 
             section(class="fix-nav third border")
+                each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                    div(class="tweet-time-line")
+                        div(class="tweet-picture")
+                            img(src="http://lorempixel.com/48/48")
+
+                        div(class="tweet-content")
+                            h1() Monica Dinculescu
+                            span() @notwaldorf
+                            button(class="default follow") Follow
+                        div(class="follow-action")
+                    div(class="clear")
 
         script(src="app.bundle.js")
