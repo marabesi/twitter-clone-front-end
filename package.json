@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "webpack-dev-server --output-public-path=/ --progress --env development"
+    "start": "webpack-dev-server --output-public-path=/ --progress --env development",
+    "deploy": "webpack --env=prod --progress --profile --colors"
   },
   "repository": {
     "type": "git",
