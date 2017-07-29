@@ -11,5 +11,8 @@ new technologies.
 * NPM
 * SASS
 
+# Final result
+
+To see the final result [click here(static assets hosted by GitHub pages)](https://marabesi.github.io/twitter-clone-front-end/)
+
 ![Final result](https://github.com/marabesi/twitter-clone-front-end/blob/master/final-result.png "Final result")
- 
