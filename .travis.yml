@@ -4,7 +4,7 @@ before_script:
 - ./prebuild.sh
 - gem install sass
 script:
-- webpack
+- npm run deploy
 env:
   global:
   - GH_REPO="marabesi/twitter-clone-front-end"
