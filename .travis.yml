@@ -11,3 +11,9 @@ env:
 branches:
   only:
   - master
+before_deploy:
+  - chmod +x ./deploy.sh
+deploy:
+  provider: script
+  script: "./deploy.sh"
+  skip_cleanup: true
