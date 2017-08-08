@@ -27,6 +27,14 @@ module.exports = {
       {
         test: /\.jade$/,
         loader: 'jade-loader'
+      },
+      {
+          test: /\.woff$/,
+          loader: 'url-loader?limit=10000&mimetype=application/font-woff'
+      },
+      {
+          test: /\.(ttf|eot|svg)$/,
+          loader: 'file-loader'
       }]
     },
     plugins: [
