@@ -12,17 +12,13 @@ module.exports = {
     ],
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'app.bundle.js'
+        filename: '[hash].bundle.js',
+        publicPath: 'dist/'
     },
     module: {
-        rules: [{ 
-            test: /\.css$/,
-            loader: ExtractTextPlugin.extract({
-                loader: 'css-loader?importLoaders=1',
-            }),
-        },{
-            test: /\.(sass|scss)$/,
-            loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+        rules: [{
+            test: /\.(scss)$/,
+            loader:'style-loader!css-loader!sass-loader'
       },
       {
         test: /\.jade$/,
@@ -38,7 +34,6 @@ module.exports = {
       }]
     },
     plugins: [
-        new ExtractTextPlugin('app.bundle.css'),
         new HtmlWebpackPlugin({
             template: './src/index.jade',
             filename: 'index.html'

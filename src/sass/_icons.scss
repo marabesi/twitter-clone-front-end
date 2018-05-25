@@ -6,12 +6,12 @@ $icon-size: 23px;
     float: left;
 }
 
-.icon-home:before { 
+.icon-home:before {
     content: "\f053";
 }
 
 .icon-lightning:before {
-    content: url("assets/images/flash.svg");
+    content: url('/assets/images/flash.svg');
     width: $icon-size;
 }
 
