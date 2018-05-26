@@ -1,6 +1,5 @@
 #!/bin/bash
 set -ev && \
-cd ./dist && \
 remote_repo=${GITHUB_URL:-`git config remote.origin.url`} && \
 remote_branch="gh-pages" && \
 git init && \
