@@ -2,7 +2,7 @@
 set -ev && \
 cd ./dist && \
 mkdir ./dist && \
-mv . ./dist && \
+mv -v ./* ./dist && \
 remote_repo=${GITHUB_URL:-`git config remote.origin.url`} && \
 remote_branch="gh-pages" && \
 git init && \
