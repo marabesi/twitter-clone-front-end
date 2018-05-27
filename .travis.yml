@@ -8,7 +8,6 @@ before_script:
 - npm install
 script:
 - chmod +x ./deploy.sh
-- echo '{"path": "twitter-clone-front-end/"} >> settings.json'
 - npm run deploy
 env:
   global:

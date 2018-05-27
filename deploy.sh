@@ -1,4 +1,5 @@
 #!/bin/bash
+echo '{"path": "twitter-clone-front-end/"} >> settings.json' && \
 set -ev && \
 cd ./dist && \
 remote_repo=${GITHUB_URL:-`git config remote.origin.url`} && \
