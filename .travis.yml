@@ -5,7 +5,9 @@ before_script:
 - chmod +x ./prebuild.sh
 - ./prebuild.sh
 - gem install sass
+- npm install
 script:
+- chmod +x ./deploy.sh
 - npm run deploy
 env:
   global:
@@ -13,9 +15,7 @@ env:
 branches:
   only:
   - master
-before_deploy:
-  - chmod +x ./deploy.sh
-deploy:
+after_script:
   provider: script
   script: "./deploy.sh"
   skip_cleanup: true
