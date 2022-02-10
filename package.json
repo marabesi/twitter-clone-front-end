@@ -26,7 +26,7 @@
     "jade": "^1.11.0",
     "jade-html-loader": "0.0.3",
     "jade-loader": "^0.8.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "path": "^0.12.7",
     "sass-loader": "^6.0.7",
     "url-loader": "^1.1.2",
