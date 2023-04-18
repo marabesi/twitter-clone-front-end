@@ -37,6 +37,6 @@
   "dependencies": {
     "style-loader": "^0.21.0",
     "tailwind": "^4.0.0",
-    "tailwindcss": "^0.7.4"
+    "tailwindcss": "^3.3.1"
   }
 }
